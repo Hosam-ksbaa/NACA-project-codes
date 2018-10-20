@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.IO.Ports;
+
+public class plane : MonoBehaviour {
+
+	Vector3 tempPoss;
+
+	SerialPort sp = new SerialPort("/dev/ttyACM0", 9600);
+
+	void Start () {
+		sp.Open();
+		sp.ReadTimeout = 1;
+
+	}
+
+	void Update(){
+		if (sp.IsOpen){
+			try{
+				if (sp.ReadByte() >=1 && sp.ReadByte() <=64){
+					tempPoss = transform.position;
+					tempPoss.x = -12648.5f;
+					transform.position = tempPoss;
+				}
+			}        catch (System.Exception){
+			}
+		}
+	}
+}

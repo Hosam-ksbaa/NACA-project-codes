@@ -1,0 +1,64 @@
+.body {
+    background-image: url(" file:///root/Desktop/NASA/FB6.jpg ");
+    background-repeat: repeat;
+   margin : 1%;
+}
+
+#body2{
+    background-color: #bf0900;
+}
+
+
+.hi{
+font-size: 25;
+}
+
+#div1 {
+text-align:cinter;
+background:#bf0900;
+}
+#ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid #e7e7e7;
+    background-color: #f3f3f3;
+
+}
+
+.li1 {
+    float: left;
+
+}
+
+.lia {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lia:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.lia.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+.yy{
+margin-left: 30px;
+}
+
+#live1{
+color:  #afbad6 ;
+}
+ #new1{
+
+ height: 0px;
+ }
+
+
